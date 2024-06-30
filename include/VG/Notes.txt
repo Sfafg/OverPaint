@@ -1,0 +1,2 @@
+Compleatly invalidate objects in destructor calls
+Flags set unset
