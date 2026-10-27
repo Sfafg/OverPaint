@@ -1,4 +1,5 @@
 #include <VG/VG.h>
+#include <ranges>
 #define WAYLAND
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
@@ -23,7 +24,6 @@ void VulkanInit() {
 };
 
 int main() {
-    glfwInitHint(GLFW_PLATFORM, GLFW_PLATFORM_X11);
     Window window("OverPaint");
     VulkanInit();
     Input::window = &window;
@@ -50,7 +50,10 @@ int main() {
             stroke = new Stroke(10, 11);
         }
 
-        renderer.StartFrame();
+        glm::mat4 viewProjection =
+            glm::ortho(0.0, (double)window.GetSize().x * 2, 0.0, (double)window.GetSize().y * 2, -1.0, 1.0);
+
+        renderer.StartFrame(viewProjection);
         renderer.Draw(*stroke);
         for (auto &s : Strokes::GetStrokes()) renderer.Draw(*s);
         renderer.EndFrame();

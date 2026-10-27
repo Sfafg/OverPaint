@@ -29,7 +29,7 @@ class Renderer {
     Renderer(Window *window);
     ~Renderer();
 
-    void StartFrame();
+    void StartFrame(const glm::mat4 &viewProjection);
     void EndFrame();
     void Draw(const vg::Buffer &buffer, const vg::Buffer &indexBuffer, int indexCount);
     void Draw(const Stroke &stroke);

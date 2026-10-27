@@ -8,7 +8,7 @@ void GetStylusData(glm::vec2 *point, float *pressure) {
     glfwGetCursorPos((GLFWwindow *)Stylus::window, &xpos, &ypos);
     point->x = xpos;
     point->y = ypos;
-    *pressure = (glfwGetMouseButton((GLFWwindow *)Stylus::window, GLFW_MOUSE_BUTTON_1) == GLFW_PRESS) * 100;
+    *pressure = (glfwGetMouseButton((GLFWwindow *)Stylus::window, GLFW_MOUSE_BUTTON_1) == GLFW_PRESS) * 1000;
 }
 
 Stylus::Stylus() {}

@@ -1,5 +1,8 @@
 #include "Renderer.h"
+#include "CmdBuffer.h"
+#include "Enums.h"
 #include "GraphicsPipeline.h"
+#include "Structs.h"
 #include "VG/../NamedResources.h"
 
 using namespace vg;
@@ -48,7 +51,7 @@ Renderer::Renderer(Window *window) : window(window) {
     msaaSampleCount = (msaaSampleCount >> 1) ^ msaaSampleCount;
 
     surface = Surface(windowSurface, {Format::BGRA8SRGB, ColorSpace::SRGBNL});
-    swapchain = Swapchain(surface, 2, w, h, Usage::ColorAttachment, PresentMode::Fifo, CompositeAlpha::PreMultiplied);
+    swapchain = Swapchain(surface, 2, w, h, Usage::ColorAttachment, PresentMode::Fifo, CompositeAlpha::Opaque);
 
     colorImage = Image(
         {swapchain.GetWidth(), swapchain.GetHeight()}, surface.GetFormat(),
@@ -70,7 +73,7 @@ Renderer::Renderer(Window *window) : window(window) {
         {Attachment(surface.GetFormat(), msaaSampleCount, ImageLayout::ColorAttachmentOptimal),
          Attachment(depthImage.GetFormat(), msaaSampleCount, ImageLayout::DepthStencilAttachmentOptimal),
          Attachment(surface.GetFormat(), ImageLayout::PresentSrc)},
-        Vector<PipelineLayout>{PipelineLayout{{}, {}}},
+        Vector<PipelineLayout>{PipelineLayout{{}, {PushConstantRange(ShaderStage::Vertex, 0, sizeof(glm::mat4))}}},
         {Subpass(
             GraphicsPipeline(
                 0,
@@ -126,7 +129,7 @@ Renderer::~Renderer() {
     if (objectCounter == 0) vg::currentDevice->WaitUntilIdle();
 }
 
-void Renderer::StartFrame() {
+void Renderer::StartFrame(const glm::mat4 &viewProjection) {
     currentDevice = &renderDevice;
     inFlightFence[currentFrame].Await(true);
 
@@ -154,7 +157,8 @@ void Renderer::StartFrame() {
             {swapchain.GetWidth(), swapchain.GetHeight()}, depthImage.GetFormat(), {ImageUsage::DepthStencilAttachment},
             1, 1, ImageTiling::Optimal, ImageLayout::Undefined, msaaSampleCount
         );
-        Allocate(Span<Image *const>{&depthImage, &colorImage}, {MemoryProperty::DeviceLocal});
+        Allocate(colorImage, {MemoryProperty::DeviceLocal});
+        Allocate(depthImage, {MemoryProperty::DeviceLocal});
         colorImageView = ImageView(colorImage, {ImageAspect::Color});
         depthImageView = ImageView(depthImage, {ImageAspect::Depth});
         for (int i = 0; i < swapchain.GetImageCount(); i++)
@@ -174,7 +178,8 @@ void Renderer::StartFrame() {
         ),
         cmd::BindPipeline(renderPass.GetPipelines()[0]),
         cmd::SetViewport(Viewport(swapchain.GetWidth(), swapchain.GetHeight())),
-        cmd::SetScissor(Scissor(swapchain.GetWidth(), swapchain.GetHeight()))
+        cmd::SetScissor(Scissor(swapchain.GetWidth(), swapchain.GetHeight())),
+        cmd::PushConstants(renderPass.GetPipelineLayouts()[0], ShaderStage::Vertex, 0, viewProjection)
         // cmd::BindDescriptorSets(
         //     renderPass.GetPipelineLayouts()[0], PipelineBindPoint::Graphics, 0, {descriptorSets[imageIndex]}
         // ),
