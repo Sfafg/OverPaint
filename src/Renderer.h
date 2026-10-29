@@ -13,9 +13,7 @@ class Renderer {
     vg::Queue queue;
     vg::Surface surface;
     vg::Swapchain swapchain;
-    vg::Image colorImage;
     vg::Image depthImage;
-    vg::ImageView colorImageView;
     vg::ImageView depthImageView;
     vg::RenderPass renderPass;
     std::vector<vg::Framebuffer> swapChainFramebuffers;

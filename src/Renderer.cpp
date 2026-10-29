@@ -41,38 +41,25 @@ Renderer::Renderer(Window *window) : window(window) {
     renderDevice = Device(
         {&queue}, {"VK_KHR_swapchain"}, deviceFeatures, windowSurface,
         [](auto id, auto supportedQueues, auto supportedExtensions, auto type, DeviceLimits limits,
-           DeviceFeatures features) { return (type == DeviceType::Dedicated); }
+           DeviceFeatures features) { return (type == DeviceType::Integrated); }
     );
     vg::currentDevice = &renderDevice;
-
-    uint32_t msaaSampleCount = std::max(
-        currentDevice->GetLimits().framebufferColorSampleCounts, currentDevice->GetLimits().framebufferDepthSampleCounts
-    );
-    msaaSampleCount = (msaaSampleCount >> 1) ^ msaaSampleCount;
 
     surface = Surface(windowSurface, {Format::BGRA8SRGB, ColorSpace::SRGBNL});
     swapchain = Swapchain(surface, 2, w, h, Usage::ColorAttachment, PresentMode::Fifo, CompositeAlpha::PreMultiplied);
 
-    colorImage = Image(
-        {swapchain.GetWidth(), swapchain.GetHeight()}, surface.GetFormat(),
-        {ImageUsage::ColorAttachment, ImageUsage::TransientAttachment}, 1, 1, msaaSampleCount
-    );
-    vg::Debug::SetName(colorImage, "colorImage");
     depthImage = Image(
         {swapchain.GetWidth(), swapchain.GetHeight()},
         {Format::D32SFLOAT, Format::D32SFLOATS8UINT, Format::x8D24UNORMPACK}, {FormatFeature::DepthStencilAttachment},
-        {ImageUsage::DepthStencilAttachment}, 1, 1, msaaSampleCount
+        {ImageUsage::DepthStencilAttachment}
     );
     vg::Debug::SetName(depthImage, "depthImage");
     Allocate(Span<Image *const>{&depthImage}, {MemoryProperty::DeviceLocal});
-    Allocate(Span<Image *const>{&colorImage}, {MemoryProperty::DeviceLocal});
-    colorImageView = ImageView(colorImage, {ImageAspect::Color});
     depthImageView = ImageView(depthImage, {ImageAspect::Depth});
 
     renderPass = RenderPass(
-        {Attachment(surface.GetFormat(), msaaSampleCount, ImageLayout::ColorAttachmentOptimal),
-         Attachment(depthImage.GetFormat(), msaaSampleCount, ImageLayout::DepthStencilAttachmentOptimal),
-         Attachment(surface.GetFormat(), ImageLayout::PresentSrc)},
+        {Attachment(surface.GetFormat(), ImageLayout::PresentSrc),
+         Attachment(depthImage.GetFormat(), ImageLayout::DepthStencilAttachmentOptimal)},
         Vector<PipelineLayout>{PipelineLayout{{}, {PushConstantRange(ShaderStage::Vertex, 0, sizeof(glm::mat4))}}},
         {Subpass(
             GraphicsPipeline(
@@ -82,7 +69,7 @@ Renderer::Renderer(Window *window) : window(window) {
                 VertexLayout({Vertex::GetBindingDescription()}, Vertex::GetAttributeDescriptions()),
                 InputAssembly(Primitive::TriangleStrip, true), Tesselation(),
                 ViewportState(Viewport(w, h), Scissor(w, h)),
-                Rasterizer(false, false, PolygonMode::Fill, CullMode::None), Multisampling(msaaSampleCount, true),
+                Rasterizer(false, false, PolygonMode::Fill, CullMode::None), Multisampling(),
                 DepthStencil(true, true, CompareOp::Less),
                 ColorBlending(
                     true, LogicOp::Copy, {0, 0, 0, 0},
@@ -93,8 +80,7 @@ Renderer::Renderer(Window *window) : window(window) {
                 ),
                 {DynamicState::Viewport, DynamicState::Scissor}
             ),
-            {}, {AttachmentReference(0, ImageLayout::ColorAttachmentOptimal)},
-            {AttachmentReference(2, ImageLayout::ColorAttachmentOptimal)},
+            {}, {AttachmentReference(0, ImageLayout::ColorAttachmentOptimal)}, {},
             AttachmentReference(1, ImageLayout::DepthStencilAttachmentOptimal)
         )},
         {SubpassDependency(
@@ -106,8 +92,7 @@ Renderer::Renderer(Window *window) : window(window) {
     swapChainFramebuffers.resize(swapchain.GetImageCount());
     for (int i = 0; i < swapchain.GetImageCount(); i++)
         swapChainFramebuffers[i] = Framebuffer(
-            renderPass, {colorImageView, depthImageView, swapchain.GetImageViews()[i]}, swapchain.GetWidth(),
-            swapchain.GetHeight()
+            renderPass, {swapchain.GetImageViews()[i], depthImageView}, swapchain.GetWidth(), swapchain.GetHeight()
         );
 
     commandBuffer = std::vector<CmdBuffer>(swapchain.GetImageCount());
@@ -140,33 +125,19 @@ void Renderer::StartFrame(const glm::mat4 &viewProjection) {
         int w = window->GetSize().x;
         int h = window->GetSize().y;
 
-        uint32_t msaaSampleCount = std::max(
-            currentDevice->GetLimits().framebufferColorSampleCounts,
-            currentDevice->GetLimits().framebufferDepthSampleCounts
-        );
-        msaaSampleCount = (msaaSampleCount >> 1) ^ msaaSampleCount;
-
         std::swap(oldSwapchain, swapchain);
         swapchain = Swapchain(
             surface, 2, w, h, oldSwapchain, Usage::ColorAttachment, PresentMode::Fifo, CompositeAlpha::PreMultiplied
         );
-        colorImage = Image(
-            {swapchain.GetWidth(), swapchain.GetHeight()}, surface.GetFormat(),
-            {ImageUsage::ColorAttachment, ImageUsage::TransientAttachment}, 1, 1, ImageTiling::Optimal,
-            ImageLayout::Undefined, msaaSampleCount
-        );
         depthImage = Image(
             {swapchain.GetWidth(), swapchain.GetHeight()}, depthImage.GetFormat(), {ImageUsage::DepthStencilAttachment},
-            1, 1, ImageTiling::Optimal, ImageLayout::Undefined, msaaSampleCount
+            1, 1, ImageTiling::Optimal, ImageLayout::Undefined
         );
-        Allocate(colorImage, {MemoryProperty::DeviceLocal});
         Allocate(depthImage, {MemoryProperty::DeviceLocal});
-        colorImageView = ImageView(colorImage, {ImageAspect::Color});
         depthImageView = ImageView(depthImage, {ImageAspect::Depth});
         for (int i = 0; i < swapchain.GetImageCount(); i++)
             swapChainFramebuffers[i] = Framebuffer(
-                renderPass, {colorImageView, depthImageView, swapchain.GetImageViews()[i]}, swapchain.GetWidth(),
-                swapchain.GetHeight()
+                renderPass, {swapchain.GetImageViews()[i], depthImageView}, swapchain.GetWidth(), swapchain.GetHeight()
             );
     }
 
@@ -176,7 +147,7 @@ void Renderer::StartFrame(const glm::mat4 &viewProjection) {
     commandBuffer[currentFrame].Clear().Begin().Append(
         cmd::BeginRenderpass(
             renderPass, swapChainFramebuffers[imageIndex], {0, 0}, {swapchain.GetWidth(), swapchain.GetHeight()},
-            {ClearColor{0, 0, 0, 0}, ClearDepthStencil{1.0f, 0U}, ClearColor{0, 0, 0, 0}}, SubpassContents::Inline
+            {ClearColor{0, 0, 0, 0}, ClearDepthStencil{1.0f, 0U}}, SubpassContents::Inline
         ),
         cmd::BindPipeline(renderPass.GetPipelines()[0]),
         cmd::SetViewport(Viewport(swapchain.GetWidth(), swapchain.GetHeight())),

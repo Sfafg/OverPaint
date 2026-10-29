@@ -41,7 +41,7 @@ int main() {
     while (window.IsOpen()) {
         glfwPollEvents();
         if (glfwGetKey((GLFWwindow *)window.GetHandle(), GLFW_KEY_ESCAPE)) window.Close();
-
+        if (glfwGetKey((GLFWwindow *)window.GetHandle(), GLFW_KEY_ESCAPE)) window.Close();
         stylus.GetData();
 
         if (stylus.IsTouching()) { stroke->AddPoint(stylus.GetPoint(), stylus.GetDirection(), stylus.GetPressure()); }
