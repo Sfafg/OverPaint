@@ -8,6 +8,12 @@ Stroke::Stroke(int vertexCap, int indexCap)
 }
 
 void Stroke::AddPoint(glm::vec2 pos, glm::vec2 direction, float thickness) {
+    if (hasPoint && glm::dot(pos - lastPoint, pos - lastPoint) <= 0.01f)
+        return;
+
+    if (glm::dot(direction, direction) <= 0.000001f)
+        direction = hasPoint ? pos - lastPoint : glm::vec2(1.0f, 0.0f);
+
     glm::vec2 normal = glm::normalize(glm::vec2(direction.y, -direction.x));
     glm::vec2 p1 = pos + normal * thickness;
     glm::vec2 p2 = pos - normal * thickness;
@@ -16,6 +22,8 @@ void Stroke::AddPoint(glm::vec2 pos, glm::vec2 direction, float thickness) {
     indexBuffer.Add(vertexBuffer.GetSize() + 1);
     vertexBuffer.Add(Vertex(p1, glm::vec3(1, 1, 1)));
     vertexBuffer.Add(Vertex(p2, glm::vec3(1, 1, 1)));
+    lastPoint = pos;
+    hasPoint = true;
     vg::Debug::SetName(vertexBuffer.GetBuffer(), "Stroke VertexBuffer");
     vg::Debug::SetName(indexBuffer.GetBuffer(), "Stroke IndexBuffer");
 }

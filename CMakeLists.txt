@@ -45,6 +45,9 @@ file(GLOB_RECURSE HEADER "${SRC_ROOT}/*.h")
 add_library(OverPaintLib STATIC)
 
 target_link_libraries(OverPaintLib PUBLIC VGraphics glm glfw)
+if(WIN32)
+  target_link_libraries(OverPaintLib PRIVATE comctl32)
+endif()
 target_sources(OverPaintLib
     PRIVATE
         ${SRC}

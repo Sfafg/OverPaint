@@ -1,1 +1,356 @@
-./build/Debug/compile_commands.json
+[
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -Winvalid-pch -x c++-header -include C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/cmake_pch.hxx -o CMakeFiles\\OverPaintLib.dir\\cmake_pch.hxx.gch -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\CMakeFiles\\OverPaintLib.dir\\cmake_pch.hxx.cxx",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/cmake_pch.hxx.cxx",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/cmake_pch.hxx.gch"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -Winvalid-pch -include C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/cmake_pch.hxx -fmodules-ts -fmodule-mapper=CMakeFiles\\OverPaintLib.dir\\src\\Canvas.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\OverPaintLib.dir\\src\\Canvas.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\src\\Canvas.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/src/Canvas.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/src/Canvas.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -Winvalid-pch -include C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/cmake_pch.hxx -fmodules-ts -fmodule-mapper=CMakeFiles\\OverPaintLib.dir\\src\\Input.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\OverPaintLib.dir\\src\\Input.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\src\\Input.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/src/Input.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/src/Input.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -Winvalid-pch -include C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/cmake_pch.hxx -fmodules-ts -fmodule-mapper=CMakeFiles\\OverPaintLib.dir\\src\\Renderer.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\OverPaintLib.dir\\src\\Renderer.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\src\\Renderer.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/src/Renderer.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/src/Renderer.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -Winvalid-pch -include C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/cmake_pch.hxx -fmodules-ts -fmodule-mapper=CMakeFiles\\OverPaintLib.dir\\src\\Strokes.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\OverPaintLib.dir\\src\\Strokes.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\src\\Strokes.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/src/Strokes.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/src/Strokes.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -Winvalid-pch -include C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/cmake_pch.hxx -fmodules-ts -fmodule-mapper=CMakeFiles\\OverPaintLib.dir\\src\\Stylus.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\OverPaintLib.dir\\src\\Stylus.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\src\\Stylus.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/src/Stylus.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/src/Stylus.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -Winvalid-pch -include C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/cmake_pch.hxx -fmodules-ts -fmodule-mapper=CMakeFiles\\OverPaintLib.dir\\src\\UndoHistory.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\OverPaintLib.dir\\src\\UndoHistory.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\src\\UndoHistory.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/src/UndoHistory.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/src/UndoHistory.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -Winvalid-pch -include C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/cmake_pch.hxx -fmodules-ts -fmodule-mapper=CMakeFiles\\OverPaintLib.dir\\src\\Vertex.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\OverPaintLib.dir\\src\\Vertex.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\src\\Vertex.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/src/Vertex.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/src/Vertex.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -Winvalid-pch -include C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/cmake_pch.hxx -fmodules-ts -fmodule-mapper=CMakeFiles\\OverPaintLib.dir\\src\\Window.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\OverPaintLib.dir\\src\\Window.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\src\\Window.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/src/Window.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaintLib.dir/src/Window.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -Winvalid-pch -x c++-header -include C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaint.dir/cmake_pch.hxx -o CMakeFiles\\OverPaint.dir\\cmake_pch.hxx.gch -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\CMakeFiles\\OverPaint.dir\\cmake_pch.hxx.cxx",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaint.dir/cmake_pch.hxx.cxx",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaint.dir/cmake_pch.hxx.gch"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -Winvalid-pch -include C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaint.dir/cmake_pch.hxx -fmodules-ts -fmodule-mapper=CMakeFiles\\OverPaint.dir\\tests\\Source.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\OverPaint.dir\\tests\\Source.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\tests\\Source.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/tests/Source.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/CMakeFiles/OverPaint.dir/tests/Source.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\Buffer.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\Buffer.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/Buffer.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/Buffer.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\CmdBuffer.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\CmdBuffer.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/CmdBuffer.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/CmdBuffer.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\CmdPool.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\CmdPool.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/CmdPool.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/CmdPool.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\ComputePipeline.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\ComputePipeline.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/ComputePipeline.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/ComputePipeline.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\DescriptorPool.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\DescriptorPool.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/DescriptorPool.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/DescriptorPool.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\DescriptorSet.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\DescriptorSet.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/DescriptorSet.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/DescriptorSet.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\Device.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\Device.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/Device.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/Device.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\FormatInfo.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\FormatInfo.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/FormatInfo.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/FormatInfo.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\Framebuffer.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\Framebuffer.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/Framebuffer.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/Framebuffer.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\GraphicsPipeline.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\GraphicsPipeline.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/GraphicsPipeline.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/GraphicsPipeline.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\Image.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\Image.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/Image.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/Image.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\ImageView.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\ImageView.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/ImageView.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/ImageView.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\Instance.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\Instance.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/Instance.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/Instance.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\MemoryManager.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\MemoryManager.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/MemoryManager.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/MemoryManager.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\NamedResources.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\NamedResources.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/NamedResources.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/NamedResources.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\PipelineCache.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\PipelineCache.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/PipelineCache.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/PipelineCache.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\PipelineLayout.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\PipelineLayout.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/PipelineLayout.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/PipelineLayout.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\QueryPool.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\QueryPool.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/QueryPool.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/QueryPool.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\Queue.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\Queue.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/Queue.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/Queue.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\RenderPass.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\RenderPass.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/RenderPass.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/RenderPass.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\Sampler.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\Sampler.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/Sampler.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/Sampler.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\Shader.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\Shader.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/Shader.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/Shader.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\Subpass.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\Subpass.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/Subpass.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/Subpass.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\Surface.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\Surface.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/Surface.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/Surface.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\Swapchain.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\Swapchain.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/Swapchain.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/Swapchain.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src -isystem C:/VulkanSDK/1.3.261.1/include -g -std=gnu++23 -o _deps\\vgraphics-build\\CMakeFiles\\VGraphics.dir\\src\\Synchronization.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\vgraphics-src\\src\\Synchronization.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-src/src/Synchronization.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/vgraphics-build/CMakeFiles/VGraphics.dir/src/Synchronization.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src -g -std=c++17 -o _deps\\glm-build\\glm\\CMakeFiles\\glm.dir\\detail\\glm.cpp.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glm-src\\glm\\detail\\glm.cpp",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-src/glm/detail/glm.cpp",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\context.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\context.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/context.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/context.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\init.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\init.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/init.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/init.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\input.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\input.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/input.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/input.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\monitor.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/monitor.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/monitor.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\platform.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\platform.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/platform.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/platform.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\vulkan.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/vulkan.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/vulkan.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\window.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\window.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/window.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/window.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\egl_context.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/egl_context.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/egl_context.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\osmesa_context.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/osmesa_context.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/osmesa_context.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\null_init.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\null_init.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/null_init.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/null_init.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\null_monitor.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\null_monitor.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/null_monitor.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/null_monitor.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\null_window.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\null_window.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/null_window.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/null_window.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\null_joystick.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\null_joystick.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/null_joystick.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/null_joystick.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_module.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\win32_module.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/win32_module.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/win32_module.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\win32_time.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/win32_time.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/win32_time.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\win32_thread.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/win32_thread.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/win32_thread.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\win32_init.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/win32_init.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/win32_init.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\win32_joystick.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/win32_joystick.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/win32_joystick.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\win32_monitor.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/win32_monitor.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/win32_monitor.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\win32_window.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/win32_window.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/win32_window.c.obj"
+},
+{
+  "directory": "C:/Projekty/Vulkan/OverPaint/build/Debug",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -D_GLFW_WIN32 -D_UNICODE -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/include -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src -IC:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src -g -std=c99 -Wall -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj -c C:\\Projekty\\Vulkan\\OverPaint\\build\\Debug\\_deps\\glfw-src\\src\\wgl_context.c",
+  "file": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-src/src/wgl_context.c",
+  "output": "C:/Projekty/Vulkan/OverPaint/build/Debug/_deps/glfw-build/src/CMakeFiles/glfw.dir/wgl_context.c.obj"
+}
+]

@@ -7,6 +7,8 @@
 struct Stroke {
     StructuredBuffer<Vertex> vertexBuffer;
     StructuredBuffer<uint16_t> indexBuffer;
+    glm::vec2 lastPoint{ 0.0f };
+    bool hasPoint = false;
 
     Stroke(int vertexCap, int indexCap);
 
