@@ -11,10 +11,8 @@ set(RESOURCES_OUTPUT_DIR "${CMAKE_CURRENT_BINARY_DIR}/resources")
 set(SHADER_ROOT "${SRC_ROOT}/shaders")
 set(SHADER_OUTPUT_DIR "${RESOURCES_OUTPUT_DIR}/shaders")
 
-set(CMAKE_CXX_STANDARD 23)
-
 file(MAKE_DIRECTORY ${TESTS_ROOT} ${SRC_ROOT} ${RESOURCES_ROOT} ${RESOURCES_OUTPUT_DIR} ${SHADER_ROOT} ${SHADER_OUTPUT_DIR})
-# include_directories(/usr/include/minizip)
+
 # Library
 include(FetchContent)
 FetchContent_Declare(
@@ -29,13 +27,24 @@ FetchContent_Declare(
   GIT_TAG master
 )
 FetchContent_MakeAvailable(glm)
+FetchContent_Declare(
+  glfw
+  GIT_REPOSITORY https://github.com/glfw/glfw.git
+  GIT_TAG master
+  CMAKE_CACHE_ARGS
+    -DGLFW_BUILD_WAYLAND:BOOL=ON
+    -DGLFW_BUILD_X11:BOOL=OFF
+    -DGLFW_BUILD_DOCS:BOOL=OFF
+)
+FetchContent_MakeAvailable(glfw)
+
 
 file(GLOB_RECURSE SRC "${SRC_ROOT}/*.cpp")
 file(GLOB_RECURSE HEADER "${SRC_ROOT}/*.h")
 
 add_library(OverPaintLib STATIC)
 
-target_link_libraries(OverPaintLib PUBLIC VGraphics glm)
+target_link_libraries(OverPaintLib PUBLIC VGraphics glm glfw)
 target_sources(OverPaintLib
     PRIVATE
         ${SRC}
@@ -88,17 +97,6 @@ if(OVER_PAINT_BUILD_TESTS)
     endforeach()
 
     add_custom_target(Resources ALL DEPENDS ${RESOURCE_DEPEND})
-
-    FetchContent_Declare(
-      glfw
-      GIT_REPOSITORY https://github.com/glfw/glfw.git
-      GIT_TAG master
-      CMAKE_CACHE_ARGS
-        -DGLFW_BUILD_WAYLAND:BOOL=ON
-        -DGLFW_BUILD_X11:BOOL=OFF
-        -DGLFW_BUILD_DOCS:BOOL=OFF
-    )
-    FetchContent_MakeAvailable(glfw)
 
     # OverPaint
     add_executable(OverPaint ${TESTS_ROOT}/Source.cpp)

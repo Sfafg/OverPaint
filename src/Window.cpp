@@ -20,6 +20,7 @@ Window::Window(const char *name) {
     glfwWindowHint(GLFW_MOUSE_PASSTHROUGH, GLFW_TRUE);
     glfwWindowHint(GLFW_DECORATED, GLFW_FALSE);
     glfwWindowHint(GLFW_TRANSPARENT_FRAMEBUFFER, GLFW_TRUE);
+    glfwWindowHint(GLFW_FLOATING, GLFW_TRUE);
 
     GLFWmonitor *monitor = glfwGetPrimaryMonitor();
     const GLFWvidmode *mode = glfwGetVideoMode(monitor);

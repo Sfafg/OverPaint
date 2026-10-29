@@ -26,7 +26,7 @@ void Stylus::GetData() {
 
 glm::vec2 Stylus::GetPoint() const { return point * 2.f - 1.f; }
 glm::vec2 Stylus::GetDirection() const { return direction; }
-float Stylus::GetPressure() const { return pressure * 0.002f; }
+float Stylus::GetPressure() const { return pressure * 0.02f; }
 
 bool Stylus::IsTouching() const { return pressure > 0; }
 bool Stylus::IsHovering() const { return notHoveringTimeout != 0; }

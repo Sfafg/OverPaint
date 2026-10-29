@@ -12,7 +12,6 @@
 #include "Input.h"
 #include <iostream>
 
-#include <vulkan/vulkan.h>
 void VulkanInit() {
     uint32_t glfwExtensionCount = 2;
     const char **glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
@@ -41,6 +40,7 @@ int main() {
     Stroke *stroke = new Stroke(10, 11);
     while (window.IsOpen()) {
         glfwPollEvents();
+        if (glfwGetKey((GLFWwindow *)window.GetHandle(), GLFW_KEY_ESCAPE)) window.Close();
 
         stylus.GetData();
 

@@ -51,7 +51,7 @@ Renderer::Renderer(Window *window) : window(window) {
     msaaSampleCount = (msaaSampleCount >> 1) ^ msaaSampleCount;
 
     surface = Surface(windowSurface, {Format::BGRA8SRGB, ColorSpace::SRGBNL});
-    swapchain = Swapchain(surface, 2, w, h, Usage::ColorAttachment, PresentMode::Fifo, CompositeAlpha::Opaque);
+    swapchain = Swapchain(surface, 2, w, h, Usage::ColorAttachment, PresentMode::Fifo, CompositeAlpha::PreMultiplied);
 
     colorImage = Image(
         {swapchain.GetWidth(), swapchain.GetHeight()}, surface.GetFormat(),
@@ -147,7 +147,9 @@ void Renderer::StartFrame(const glm::mat4 &viewProjection) {
         msaaSampleCount = (msaaSampleCount >> 1) ^ msaaSampleCount;
 
         std::swap(oldSwapchain, swapchain);
-        swapchain = Swapchain(surface, 2, w, h, oldSwapchain);
+        swapchain = Swapchain(
+            surface, 2, w, h, oldSwapchain, Usage::ColorAttachment, PresentMode::Fifo, CompositeAlpha::PreMultiplied
+        );
         colorImage = Image(
             {swapchain.GetWidth(), swapchain.GetHeight()}, surface.GetFormat(),
             {ImageUsage::ColorAttachment, ImageUsage::TransientAttachment}, 1, 1, ImageTiling::Optimal,
